@@ -1,0 +1,8 @@
+row_id,name_old,company_old,date_submitted_old,date_cleared_old,status_old,nominator_old,clearance_level_old,name_new,company_new,date_submitted_new,date_cleared_new,status_new,nominator_new,clearance_level_new,_merge,change_type,changed_fields
+alice chen_acme corpd,,,,,,,,Alice Chen,Acme Corpd,2024-01-23,2023-10-31,approved,nina gomez,top secret,right_only,new_record,"status, nominator, clearance_level, date_cleared, date_submitted"
+emily wangd_gamma inc,,,,,,,,Emily Wangd,Gamma Inc,2023-12-27,2023-12-20,approved,nina gomez,secret,right_only,new_record,"status, nominator, clearance_level, date_cleared, date_submitted"
+alice chen_acme corp,Alice Chen,Acme Corp,2024-01-23,2023-10-31,approved,nina gomez,top secret,,,,,,,,left_only,removed_record,"status, nominator, clearance_level, date_cleared, date_submitted"
+emily wang_gamma inc,Emily Wang,Gamma Inc,2023-12-27,2023-12-20,denied,nina gomez,secret,,,,,,,,left_only,removed_record,"status, nominator, clearance_level, date_cleared, date_submitted"
+al goat_gisa,Al Goat,GISA,2022-02-03,2022-04-04,approved,bob dole,secret,Al Goat,GISA,2022-02-03,2023-04-04,pending,bob doled,secret,both,value_changed,"status, nominator, date_cleared"
+alice chains_orion group,Alice Chains,Orion Group,2024-02-01,2024-01-30,pending,jason lin,public trust,Alice Chains,Orion Group,2024-02-02,2024-01-30,pending,jason lin,public trusts,both,value_changed,"clearance_level, date_submitted"
+bill hicks_risa,Bill Hicks,RISA,2022-02-02,2022-03-03,pending,chuck norris,top secret,Bill Hicks,RISA,2023-02-02,2022-03-03,pending,chuck norris,top secret,both,value_changed,date_submitted

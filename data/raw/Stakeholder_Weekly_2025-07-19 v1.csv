@@ -1,0 +1,6 @@
+Name,Company,Date_Submitted,Date_Cleared,Status,Nominator,Clearance_Level
+Emily Wang,Gamma Inc,12/27/2023,12/20/2023,Pending,Nina Gomez,Secret
+Alice Chen,Acme Corp,1/23/2024,10/31/2023,Approved,Nina Gomez,Secret
+Bill Hicks,RISA,2/2/2022,3/3/2022,Pending,Chuck Norris,Top Secret
+Al Goat,GISA,2/3/2022,4/4/2022,Approved,Bob Dole,Secret
+Alice Chains,Orion Group,2/1/2024,1/30/2024,Pending,Jason Lin,Public Trust
