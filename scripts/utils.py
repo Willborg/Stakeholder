@@ -21,29 +21,28 @@ def proper_case_status(df):
 
 
 def build_row_id(df):
-    """Create a unique row_id based on subject name, primary position, and date case created."""
+    """Create row_id using just Subject Name and Primary Position for clarity and stability."""
 
     def safe(v):
         return normalize_text(v) if pd.notna(v) else ""
 
-    # Ensure columns exist
-    for col in ["subject name", "primary position", "date case created"]:
+    # Ensure required columns exist
+    for col in ["subject name", "primary position"]:
         if col not in df.columns:
             df[col] = ""
 
-    # Build the ID
+    # Build simple row ID
     row_ids = (
         df["subject name"].apply(safe)
         + "_" +
         df["primary position"].apply(safe)
-        + "_" +
-        df["date case created"].astype(str)
     )
 
-    # Check for duplicates
+    # Detect duplicates (optional safety check)
     if row_ids.duplicated().any():
         duplicates = row_ids[row_ids.duplicated()].unique()
         raise ValueError(f"❌ Duplicate row_id(s) found: {list(duplicates)}")
 
     return row_ids
+
 
