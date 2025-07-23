@@ -1,6 +1,0 @@
-row_id,name,company,date_submitted,date_cleared,status,nominator,clearance_level
-emily wang_gamma inc,Emily Wang,Gamma Inc,2023-12-27,2023-12-20,Denied,nina gomez,secret
-alice chen_acme corp,Alice Chen,Acme Corp,2024-01-23,2023-10-31,Approved,nina gomez,top secret
-bill hicks_risa,Bill Hicks,RISA,2022-02-02,2022-03-03,Pending,Chuck Norris,Top Secret
-al goat_gisa,Al Goat,GISA,2022-02-03,2022-04-04,Approved,Bob Dole,Secret
-alice chains_orion group,Alice Chains,Orion Group,2024-02-01,2024-01-30,Pending,Jason Lin,Public Trust
